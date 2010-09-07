@@ -1,0 +1,9 @@
+[user]
+    email = ben@benhodgson.com
+    name = Ben Hodgson
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+    ui = auto

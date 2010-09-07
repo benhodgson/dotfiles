@@ -1,0 +1,7 @@
+[ui]
+username = Ben Hodgson <ben@benhodgson.com>
+editor = mate -w
+
+[extensions]
+convert = 
+hgext.fetch=
