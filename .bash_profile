@@ -7,6 +7,10 @@ export EDITOR='mate -w'
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegxedabagacad
 
+# virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
 # Prompt:
 PS1="[\u:\w] → "
 
