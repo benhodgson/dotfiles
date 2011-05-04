@@ -2,7 +2,7 @@ alias ll='ls -l'
 alias smtpdebug='python -m smtpd -n -c DebuggingServer localhost:1025'
 alias rmpyc="find . -name '*.pyc' -exec rm {} \;"
 
-export PYTHONSTARTUP=$HOME/.pythonrc
+export PYTHONSTARTUP=$HOME/.pythonrc.py
 export EDITOR='mate -w'
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegxedabagacad
