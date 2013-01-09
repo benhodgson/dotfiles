@@ -3,6 +3,9 @@ shopt -s histappend
 alias ll='ls -l'
 alias smtpdebug='python -m smtpd -n -c DebuggingServer localhost:1025'
 alias rmpyc="find . -name '*.pyc' -exec rm {} \;"
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
 
 export PYTHONSTARTUP=$HOME/.pythonrc.py
 export EDITOR='mate -w'
