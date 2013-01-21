@@ -2,7 +2,7 @@
 Python Startup File (from https://gist.github.com/955154)
 
 Add this file to ~/.pythonrc.py to add history between sessions and
-auto-completion via the ESC key to the interactive Python interpreter. After
+auto-completion via the TAB key to the interactive Python interpreter. After
 adding this file, put something like the following line in your .bash_profile:
 
     export PYTHONSTARTUP=$HOME/.pythonrc.py
