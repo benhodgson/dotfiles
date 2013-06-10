@@ -11,6 +11,9 @@ export PYTHONSTARTUP=$HOME/.pythonrc.py
 export EDITOR='mate -w'
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegxedabagacad
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+shopt -s histappend
 
 # virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
