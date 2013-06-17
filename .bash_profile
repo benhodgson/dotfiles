@@ -25,6 +25,9 @@ PROJECTS_DIR=$HOME/projects
 function project {
     cd $PROJECTS_DIR/"$1"/
     cd "$1" > /dev/null 2>&1 && source ../bin/activate > /dev/null 2>&1;
+    if [ -d .git ]; then
+        git status
+    fi
 }
 complete -W '`ls $PROJECTS_DIR`' project # OMFG command completion
 
