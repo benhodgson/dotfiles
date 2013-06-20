@@ -31,5 +31,10 @@ function project {
 }
 complete -W '`ls $PROJECTS_DIR`' project # OMFG command completion
 
+# Homebrew bash completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+fi
+
 # Add Homebrew and MySQL bin directories to $PATH
 export PATH=$PATH:/usr/local/sbin:/usr/local/mysql/bin:$HOME/sbin
