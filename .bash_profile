@@ -33,7 +33,7 @@ complete -W '`ls $PROJECTS_DIR`' project # OMFG command completion
 
 # Homebrew bash completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
+    source `brew --prefix`/etc/bash_completion
 fi
 
 # Add Homebrew and MySQL bin directories to $PATH
