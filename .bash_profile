@@ -5,6 +5,7 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
 alias urldecode='pawk "urllib.unquote(l)"'
+alias serve80='sudo twistd -n web --path . --port 80'
 
 function inflate {
     for f in "$@";
