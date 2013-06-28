@@ -4,6 +4,16 @@ alias rmpyc="find . -name '*.pyc' -exec rm {} \;"
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
+alias urldecode='pawk "urllib.unquote(l)"'
+
+function inflate {
+    for f in "$@";
+    do
+        echo "$f" 1>&2
+        python -c "import zlib,sys;sys.stdout.write(zlib.decompress(sys.stdin.read()))" < $f
+        if [ $? -ne 0 ]; then return 1; fi
+    done
+}
 
 export PYTHONSTARTUP=$HOME/.pythonrc.py
 export EDITOR='mate -w'
